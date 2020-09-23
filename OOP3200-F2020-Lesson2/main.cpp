@@ -6,10 +6,11 @@
  *	@author		Domenic Catalano
  *	@studentID  100556614
 */
+
 #include <iostream> 		// cin, cout
 #include <iomanip>			// fixed, setprecision()
 
-#include "CartesianPoint.h"	// Cartesian Point Class
+#include "CartesianPoint.h"
 #include "MyConsoleInput.h" // ConsoleInput::ReadInteger()
 
 
@@ -48,7 +49,8 @@ int main()
 
 		// Processing
 		// determine the distance between the two points
-		distance = origin.GetDistanceTo(destination);
+		//distance = origin.GetDistanceTo(destination);
+		distance = origin - destination;
 
 		// Output 
 		// Show the points and the distance
@@ -66,4 +68,4 @@ int main()
 	// done.
 	std::cout << std::endl << std::endl;
 	return 0;
-} // end of main()
+} // end of main(
